@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'UConn IMA',
+  tagline: 'Cool line of text to talk about',
   url: 'https://IMAUCONN.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'IMAUCONN.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'UConn IMA',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
