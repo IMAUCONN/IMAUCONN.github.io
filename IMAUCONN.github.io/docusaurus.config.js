@@ -22,6 +22,31 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
+        {
+          to: '/about_us/',
+          label: 'About Us',
+          position: 'left',
+        },
+        {
+          to: '/members/',
+          label: 'Members',
+          position: 'left',
+        },
+        {
+          to: '/company/',
+          label: 'Company',
+          position: 'left',
+        },
+        {
+          to: '/news/',
+          label: 'News',
+          position: 'left',
+        },
+        {
+          to: '/technology/',
+          label: 'Technology',
+          position: 'left',
+        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
