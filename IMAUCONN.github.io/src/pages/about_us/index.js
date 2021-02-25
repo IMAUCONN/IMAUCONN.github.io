@@ -13,7 +13,7 @@ function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          Edit <code>pages/hello.js</code> and save to reload.
+          Edit <code>pages/hello.js</code> IMA UCONN.
         </p>
       </div>
     </Layout>
