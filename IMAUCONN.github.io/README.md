@@ -8,6 +8,8 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 yarn install
 ```
 
+This will install a package manager which allows you to import the libraries needed for your code. It will also keep track of which libraries you have already installed.
+
 ## Local Development
 
 ```console
