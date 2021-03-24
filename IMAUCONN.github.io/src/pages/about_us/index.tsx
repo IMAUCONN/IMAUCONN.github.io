@@ -8,6 +8,7 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { Box, Container, Grid, Paper } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import { FormatBold } from '@material-ui/icons';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -138,13 +139,12 @@ export default function TextMobileStepper() {
             </Grid>
             <Grid item xs justify='flex-end'>
             <img src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
-               
             </Grid>
-          </Grid>
+          </Grid >
           <Grid item>
-            <h2>Meet the executive board!</h2> 
+            <h2>Meet the Executive Board:</h2> 
           </Grid>
-          <Grid item>
+          <Grid item >
             <AutoPlaySwipeableViews
               axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
               index={activeStep}
@@ -154,20 +154,20 @@ export default function TextMobileStepper() {
               {eboard.map((step, index) => (
                 <div key={step.label} className={classes.root}>
                 {Math.abs(activeStep - index) <= 2 ? (
-                  <Grid container direction='row'>
+                  <Grid container direction='row' justify='center' spacing={9} >
                     <Grid item>
                     <p> {step.paragraph}</p>
                     </Grid>
                     <Grid item>
                       <img className={classes.img} src={step.imgPath} alt={step.label} />
                     </Grid>
-                    <Grid item>
+                    <Grid item >
                       <Grid container direction= 'column'>
-                          <text>{step.position }</text>
+                          <text><h3>{step.position}</h3></text>
                           <text>{step.name }</text> 
                           <text>{step.year }</text> 
                           <text>{step.major }</text> 
-                          <text>{step.email }</text> 
+                          <a href = {`mailto: ${step.email}`}><text>{step.email}</text></a> 
                       </Grid>
                     </Grid>
                   </Grid>) : null}
