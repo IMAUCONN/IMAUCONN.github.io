@@ -154,7 +154,7 @@ export default function TextMobileStepper() {
               {eboard.map((step, index) => (
                 <div key={step.label} className={classes.root}>
                 {Math.abs(activeStep - index) <= 2 ? (
-                  <Grid container direction='row' spacing={9}>
+                  <Grid container direction='row'>
                     <Grid item>
                     <p> {step.paragraph}</p>
                     </Grid>
