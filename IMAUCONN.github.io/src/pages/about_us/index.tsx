@@ -19,7 +19,7 @@ function Hello() {
           <p className={styles.paragraph}> Our meetings and events involve inviting IT representatives from various industries to connect with students and teach them about the industry, their specific companies, and potential job opportunities. We also focus on professional development by offering networking opportunities, resume building workshops, and mock interviews. </p>
           <p className={styles.paragraph}> Together we create a network of individuals passionate about information systems, analytics, and industry technology. </p>
         </div>
-      <img className={styles.featureImage} src={"https://ima-business.rso.uconn.edu/wp-content/uploads/sites/1496/2016/04/12446330_146077219119476_1313848886_n.jpg"}/>
+      <img className={styles.featureImage} src={"https://ima-business.rso.uconn.edu/wp-content/uploads/sites/1496/2016/04/https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg.jpg"}/>
       </div>
     </div>
     </Layout>
