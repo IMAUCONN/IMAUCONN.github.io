@@ -134,7 +134,7 @@ export default function TextMobileStepper() {
               </Container>
             </Grid>
             <Grid item xs justify='flex-end'>
-              <img src='"https://ima-business.rso.uconn.edu/wp-content/uploads/sites/1496/2016/04/https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg.jpg"'></img>   
+              <img src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>   
             </Grid>
           </Grid>
           <Grid item>
