@@ -33,16 +33,6 @@ const eboard = [
     imgPath: '../../static/img/headshots/vice_president.png',
   },
   {
-    name: "Suyang Xu",
-    year: "Junior",
-    position: "Treasurer",
-    major: "MIS",
-    email: "suyang.xu@uconn.edu",
-    paragraph: "skdl;fgjdlsk;jds;lkfajs;",
-    label: 'Bali, Indonesia',
-    imgPath: '../../static/img/headshots/secretary.png'
-  },
-  {
     name: "Maciej Kossuth",
     year: "Junior",
     position: "Secretary",
@@ -50,17 +40,17 @@ const eboard = [
     email: "maciej.kossuth@uconn.edu",
     paragraph: "skdl;fgjdlsk;jds;lkfajs;",
     label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:'../../static/img/headshots/treasurer.png',
+    imgPath:'../../static/img/headshots/secretary.png',
   },
   {
-    name: "Robert Damjanovich",
-    year: "Sophomore",
-    position: "Chief Technology Officer",
-    major: "Finance",
-    email: "robert.damjanovich@uconn.edu",
+    name: "Suyang Xu",
+    year: "Junior",
+    position: "Treasurer",
+    major: "MIS",
+    email: "suyang.xu@uconn.edu",
     paragraph: "skdl;fgjdlsk;jds;lkfajs;",
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:'../../static/img/headshots/treasurer.png',
+    label: 'Bali, Indonesia',
+    imgPath: '../../static/img/headshots/treasurer.png'
   },
   {
     name: "Jody Kung",
@@ -73,6 +63,16 @@ const eboard = [
     imgPath:
     '../../static/img/headshots/cmo.png',
   },
+  {
+    name: "Robert Damjanovich",
+    year: "Sophomore",
+    position: "Chief Technology Officer",
+    major: "Finance",
+    email: "robert.damjanovich@uconn.edu",
+    paragraph: "skdl;fgjdlsk;jds;lkfajs;",
+    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+    imgPath:'../../static/img/headshots/cto.png',
+  },
 ];
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -83,14 +83,12 @@ const useStyles = makeStyles((theme: Theme) =>
     paper: {
       padding: theme.spacing(2),
       textAlign: 'center',
-      color: theme.palette.text.secondary,
     },
     header: {
       display: 'flex',
       alignItems: 'center',
       height: 50,
       paddingLeft: theme.spacing(4),
-      backgroundColor: theme.palette.background.default,
     },
     img: {
       height: 255,
@@ -139,8 +137,7 @@ export default function TextMobileStepper() {
               </Container>
             </Grid>
             <Grid item xs justify='flex-end'>
-              <Paper><img src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
-              </Paper>
+            <img src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
                
             </Grid>
           </Grid>
@@ -157,14 +154,23 @@ export default function TextMobileStepper() {
               {eboard.map((step, index) => (
                 <div key={step.label} className={classes.root}>
                 {Math.abs(activeStep - index) <= 2 ? (
-                  <Grid> 
-                  <p>{step.name}</p> 
-                  <img className={classes.img} src={step.imgPath} alt={step.label} />
-                  <Grid>
-
-                  </Grid>
-                  </Grid>
-                ) : null}
+                  <Grid container direction='row' spacing={9}>
+                    <Grid item>
+                    <p> {step.paragraph}</p>
+                    </Grid>
+                    <Grid item>
+                      <img className={classes.img} src={step.imgPath} alt={step.label} />
+                    </Grid>
+                    <Grid item>
+                      <Grid container direction= 'column'>
+                          <text>{step.position }</text>
+                          <text>{step.name }</text> 
+                          <text>{step.year }</text> 
+                          <text>{step.major }</text> 
+                          <text>{step.email }</text> 
+                      </Grid>
+                    </Grid>
+                  </Grid>) : null}
               </div>
               ))}
             </AutoPlaySwipeableViews>
