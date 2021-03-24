@@ -5,7 +5,7 @@ import MobileStepper from '@material-ui/core/MobileStepper';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import { Box, Container, Grid } from '@material-ui/core';
+import { Box, Container, Grid, Paper } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
@@ -134,7 +134,9 @@ export default function TextMobileStepper() {
               </Container>
             </Grid>
             <Grid item xs justify='flex-end'>
-              <img src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>   
+              <Paper><img src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
+              </Paper>
+               
             </Grid>
           </Grid>
           <Grid item>
@@ -149,10 +151,16 @@ export default function TextMobileStepper() {
             >
               {eboard.map((step, index) => (
                 <div key={step.label} className={classes.root}>
-                  {Math.abs(activeStep - index) <= 2 ? (
-                    <img className={classes.img} src={step.imgPath} alt={step.label} />
-                  ) : null}
-                </div>
+                {Math.abs(activeStep - index) <= 2 ? (
+                  <Grid> 
+                  <p>{step.name}</p> 
+                  <img className={classes.img} src={step.imgPath} alt={step.label} />
+                  <Grid>
+
+                  </Grid>
+                  </Grid>
+                ) : null}
+              </div>
               ))}
             </AutoPlaySwipeableViews>
             <MobileStepper
