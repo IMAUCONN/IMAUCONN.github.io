@@ -19,8 +19,7 @@ const eboard = [
     email: "jenna@gmail.com",
     paragraph: "skdl;fgjdlsk;jds;lkfajs;",
     label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+    imgPath: '../../static/img/headshots/president.png',
   },
   {
     name: "",
@@ -29,8 +28,7 @@ const eboard = [
     email: "jenna@gmail.com",
     paragraph: "skdl;fgjdlsk;jds;lkfajs;",
     label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+    imgPath: '../../static/img/headshots/vice_president.png',
   },
   {
     name: "",
@@ -39,8 +37,7 @@ const eboard = [
     email: "jenna@gmail.com",
     paragraph: "skdl;fgjdlsk;jds;lkfajs;",
     label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+    imgPath: '../../static/img/headshots/secretary.png'
   },
   {
     name: "",
@@ -49,8 +46,7 @@ const eboard = [
     email: "jenna@gmail.com",
     paragraph: "skdl;fgjdlsk;jds;lkfajs;",
     label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+    imgPath:'../../static/img/headshots/treasurer.png',
   },
   {
     name: "",
@@ -60,7 +56,17 @@ const eboard = [
     paragraph: "skdl;fgjdlsk;jds;lkfajs;",
     label: 'Goč, Serbia',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+    '../../static/img/headshots/cmo.png',
+  },
+  {
+    name: "",
+    year: "",
+    position: "",
+    email: "jenna@gmail.com",
+    paragraph: "skdl;fgjdlsk;jds;lkfajs;",
+    label: 'Goč, Serbia',
+    imgPath:
+    '../../static/img/headshots/cto.png',
   },
 ];
 
@@ -84,8 +90,8 @@ const useStyles = makeStyles((theme: Theme) =>
     img: {
       height: 255,
       display: 'block',
-      maxWidth: 400,
-      overflow: 'visible',
+      maxWidth: 255,
+      overflow: 'hidden',
       width: '100%',
     },
   }),
@@ -154,18 +160,8 @@ export default function TextMobileStepper() {
               position="static"
               variant="text"
               activeStep={activeStep}
-              nextButton={
-                <Button size="small" onClick={handleNext}>
-                  Next
-                  {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
-                </Button>
-              }
-              backButton={
-                <Button size="small" onClick={handleBack}>
-                  {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                  Back
-                </Button>
-              }
+              nextButton={<Button size="small" onClick={handleNext}> Next <KeyboardArrowRight /> </Button>}
+              backButton={<Button size="small" onClick={handleBack}> <KeyboardArrowLeft/>Back</Button>}
             />
           </Grid>
         </Grid>
