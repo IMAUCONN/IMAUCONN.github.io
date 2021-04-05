@@ -4,6 +4,7 @@
 
 - Download [Visual Studio Code](https://code.visualstudio.com/)
 - Install [node js](https://nodejs.org/en/download/)
+- Install [git](https://git-scm.com/downloads)
 - Use npm to install Yarn (open the command prompt or the terminal and type in ```npm install --global yarn```
 - Open Visual Studio Code and create a new folder for the website ```mkdir ima_website```
 - Change your directory to the new folder ```cd ima_website```
