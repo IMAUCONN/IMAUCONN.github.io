@@ -143,6 +143,7 @@ export default function TextMobileStepper() {
           </Grid >
           <Grid item>
             <h2>Meet the Executive Board:</h2> 
+          
           </Grid>
           <Grid item >
             <AutoPlaySwipeableViews

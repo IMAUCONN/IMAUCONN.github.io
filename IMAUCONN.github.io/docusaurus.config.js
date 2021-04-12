@@ -1,6 +1,6 @@
 module.exports = {
   title: 'UConn IMA',
-  tagline: 'Cool line of text to talk about',
+  tagline: 'The Information Management Association (IMA) at the University of Connecticut is a student-run organization that provides resources for students interested in the field of Information Technology. Our meetings and events involve inviting IT representatives from various industries to speak to students about their company, job prospects in the field, recruitment, informational sessions, resume building, conduct mock interviews, and the art of networking.',
   url: 'https://IMAUCONN.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -59,15 +59,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Social Media',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Instagram',
+              to: 'https://www.instagram.com/imauconn//',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Facebook',
+              to: 'https://www.facebook.com/UConnIMA',
             },
           ],
         },
@@ -75,28 +75,28 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
+              label: 'MIS Discord',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Uconn Reddit',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Twitter',
+              label: 'Linkedln',
               href: 'https://twitter.com/docusaurus',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Projects',
           items: [
             {
-              label: 'Blog',
+              label: 'IMA Github',
               to: 'blog',
             },
             {
-              label: 'GitHub',
+              label: 'Tech Kits',
               href: 'https://github.com/facebook/docusaurus',
             },
           ],
