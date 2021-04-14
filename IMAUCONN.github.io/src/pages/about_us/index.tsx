@@ -5,7 +5,7 @@ import MobileStepper from '@material-ui/core/MobileStepper';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import { Box, Container, Grid, Paper } from '@material-ui/core';
+import { Box, Container, Grid, Hidden, Paper, StylesProvider } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import { FormatBold } from '@material-ui/icons';
@@ -83,14 +83,12 @@ const useStyles =
       flexGrow: 1,
     },
     paper: {
-      padding: theme.spacing(2),
       textAlign: 'center',
     },
     header: {
       display: 'flex',
       alignItems: 'center',
-      height: 50,
-      paddingLeft: theme.spacing(4),
+      height: 500,
     },
     img: {
       height: 255,
@@ -98,6 +96,13 @@ const useStyles =
       maxWidth: 255,
       overflow: 'hidden',
       width: '100%',
+    },
+    bigimg: {
+      MaxHeight: 600,
+      maxWidth: 600,
+    },
+    paragraph: {
+      marginRight: 50
     },
   }),
 );
@@ -124,10 +129,10 @@ export default function TextMobileStepper() {
     <Layout>
       <Container maxWidth='xl'>
       <Grid container direction='column'>
-          <Grid item xs>
+          <Grid item >
             <h1>About us</h1>
           </Grid>
-          <Grid item>
+          <Grid item >
             <h2>Who we are:</h2> 
           </Grid>
           <Grid container direction='row'>  
@@ -139,10 +144,10 @@ export default function TextMobileStepper() {
               </Container>
             </Grid>
             <Grid item xs justify='flex-end'>
-            <img src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
+            <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
             </Grid>
           </Grid >
-          <Grid item>
+          <Grid item >
             <h2>Meet the Executive Board:</h2> 
           </Grid>
           <Grid item >
@@ -151,18 +156,20 @@ export default function TextMobileStepper() {
               index={activeStep}
               onChangeIndex={handleStepChange}
               enableMouseEvents
+              
+              
             >
               {eboard.map((step, index) => (
                 <div key={step.label} className={classes.root}>
                 {Math.abs(activeStep - index) <= 2 ? (
-                  <Grid container direction='row' justify='center' spacing={9} >
-                    <Grid item>
-                    <p>{step.paragraph}</p>
+                  <Grid container direction='row' justify='center'>
+                    <Grid item sm={4}>
+                    <p className={classes.paragraph}>{step.paragraph}</p>
                     </Grid>
-                    <Grid item>
+                    <Grid item sm={2}>
                       <img className={classes.img} src={step.imgPath} alt={step.label} />
                     </Grid>
-                    <Grid item >
+                    <Grid item sm={4}>
                       <Grid container direction= 'column'>
                           <text><h3>{step.position}</h3></text>
                           <text>{step.name }</text> 
