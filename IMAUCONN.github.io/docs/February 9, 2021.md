@@ -2,7 +2,6 @@
 id: February 9, 2021
 title: February 9, 2021
 sidebar_label: February 9, 2021
-slug: /
 ---
 
 09 February 2021 / 7:00 PM / Webex

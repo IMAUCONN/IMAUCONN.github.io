@@ -2,7 +2,6 @@
 id: February 2, 2021
 title: February 2, 2021
 sidebar_label: February 2, 2021
-slug: /
 ---
 
 02 February 2021 / 7:00 PM / Teams

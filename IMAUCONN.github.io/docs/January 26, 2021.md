@@ -42,7 +42,6 @@ Jon Moore, E-Board, and Members
     - Experiential Learning Roles
         - OPIM Innovate Director
 - MIS Courses  
-![MIS Courses](./static/img/meeting_minutes/MIS_Courses.png "Title")
 
 ## ACTION ITEMS
 
