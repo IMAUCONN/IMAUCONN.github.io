@@ -42,14 +42,30 @@ Jon Moore, E-Board, and Members
     - Experiential Learning Roles
         - OPIM Innovate Director
 - MIS Courses  
+    - ![MIS Courses](assets/mis_courses.png)
+    - Open spots in classes unless filled by MIS majors and Analytics Minor
+    - Experiential learning 
+        - Hackathon
+            - Problem Solving
+            - 1-2 days
+            - Team-based
+            - Rapid Prototyping
+        - Case Competition
+            - 1-2 weeks
+            - Team-based
+            - Business Cases and Analysis
+            - ROI/Financials
+            - Presentation Skills
+        - Design Challenge
+            - 1-3 months
+            - Mentoring and Workshops
+            - Innovate Wellness Challenge
+- OPIM Innovate (check the website for new updates)
 
 ## ACTION ITEMS
 
-- Contact Information:
-    - Jason.madel@pwc.com
-    - Nicholas.a.Wetherell@pwc.com
-    - molly.l.sabol@pwc.com
+- Reach out here: jon.moore@uconn.edu
 
 ## NEXT WEEK’S AGENDA
 
-- Meeting with MIS Seniors
+- Meeting with Synchrony
