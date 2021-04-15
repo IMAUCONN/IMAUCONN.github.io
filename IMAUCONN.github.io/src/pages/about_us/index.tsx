@@ -61,8 +61,7 @@ const eboard = [
     email: "jody.kung@uconn.edu",
     paragraph: "My name is Jody Kung and I am a Junior MIS major with a Marketing minor. During my time as an undergraduate, I've taken on leadership positions in organizations like the Learning Community Ececutive Council, Pi Beta Phi, and HackUConn, which have enabled me to sharpen my project management and problem-solving skills.",
     label: 'Goč, Serbia',
-    imgPath:
-    '../../static/img/headshots/cmo.png',
+    imgPath:'../../static/img/headshots/cmo.png',
   },
   {
     name: "Robert Damjanovich",
@@ -137,11 +136,11 @@ export default function TextMobileStepper() {
           </Grid>
           <Grid container direction='row'>  
             <Grid item xs justify='flex-start'>
-              <Container maxWidth='md'>   
+              <Grid>   
                   <p>The Information Management Association (IMA) is a student-run organization, at the University of Connecticut, that provides resources for students interested in the field of Information Technology. We allow students to develop their professional skill-set by connecting them to relevant job opportunities, all while creating an inviting community.</p>
                   <p>Our meetings and events involve inviting IT representatives from various industries to connect with students and teach them about the industry, their specific companies, and potential job opportunities. We also focus on professional development by offering networking opportunities, resume building workshops, and mock interviews.</p>
                   <p>Together we create a network of individuals passionate about information systems, analytics, and industry technology. </p> 
-              </Container>
+              </Grid>
             </Grid>
             <Grid item xs justify='flex-end'>
             <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
@@ -155,10 +154,7 @@ export default function TextMobileStepper() {
               axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
               index={activeStep}
               onChangeIndex={handleStepChange}
-              enableMouseEvents
-              
-              
-            >
+              enableMouseEvents>
               {eboard.map((step, index) => (
                 <div key={step.label} className={classes.root}>
                 {Math.abs(activeStep - index) <= 2 ? (
@@ -167,7 +163,7 @@ export default function TextMobileStepper() {
                     <p className={classes.paragraph}>{step.paragraph}</p>
                     </Grid>
                     <Grid item sm={2}>
-                      <img className={classes.img} src={step.imgPath} alt={step.label} />
+                      <img className={classes.img} src={step.imgPath}/>
                     </Grid>
                     <Grid item sm={4}>
                       <Grid container direction= 'column'>
