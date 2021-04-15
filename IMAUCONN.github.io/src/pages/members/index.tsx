@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import clsx from 'clsx';
+import { makeStyles, TableContainer, Table, TableHead, Paper, TableBody, TableCell, TableRow } from '@material-ui/core';
 import { Grid, Container } from '@material-ui/core';
 
 
@@ -20,12 +21,34 @@ import { Grid, Container } from '@material-ui/core';
 //     const feed = new window.DOMParser().parseFromString(contents, "text/xml");
 //     let items: any = feed.querySelectorAll("item");
 //     const feedItems = [...items].map((el) => ({
-//       link: el.querySelector("link").innerHTML,
 //       location: el.querySelector("location").innerHTML,
-//       title: el.querySelector("title").innerHTML,
+//       buildingroom: el.querySelector("buildingroom").innerHTML,
+//       date: el.querySelector("date").innerHTML,
+//       start_time: el.querySelector("start_time").innerHTML,
+//       stop_time: el.querySelector("stop_time").innerHTML,
 //     }));
 //     return (feedItems);
 // }
+// const useStyles = makeStyles({
+//   table: {
+//     minWidth: 650,
+//   },
+// });
+
+function createData(name: string, date: string, location: string, room: string, time: string) {
+  return {name, date, location, room, time};
+}
+
+const rows = [
+  //for loop items create data using name date location room and time in items'
+  //for items: items
+  //
+  createData('Frozen yoghurt', "159", "6", "24", "4.0"),
+  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
+  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
+  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
+  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
+];
 
 export default function App() {
   return (
@@ -85,7 +108,30 @@ export default function App() {
         </Grid>
         
         <h3>Upcoming Meetings</h3>
-        
+        <TableContainer component={Paper}>
+      <Table aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell>Name</TableCell>
+            <TableCell align="right">Date</TableCell>
+            <TableCell align="right">Location</TableCell>
+            <TableCell align="right">Room</TableCell>
+            <TableCell align="right">Time</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow key={row.name}>
+              <TableCell component="th" scope="row">{row.name}</TableCell>
+              <TableCell align="right">{row.date}</TableCell>
+              <TableCell align="right">{row.location}</TableCell>
+              <TableCell align="right">{row.room}</TableCell>
+              <TableCell align="right">{row.time}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+      </TableContainer>
           {/* <button onClick= {async () => {console.log("refresing");setItems(await rssitems())}}> refresh</button>
         {items.map((item) => {
           return (
@@ -99,3 +145,4 @@ export default function App() {
       </Container>
     </Layout>
   );}
+
