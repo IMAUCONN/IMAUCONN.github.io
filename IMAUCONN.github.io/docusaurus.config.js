@@ -48,26 +48,21 @@ module.exports = {
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Social Media',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Instagram',
+              href: 'https://www.instagram.com/imauconn/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/UConnIMA/',
             },
           ],
         },
@@ -75,29 +70,29 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/rhN7pYrWVV',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'UCONN Reddit',
+              href: 'https://www.reddit.com/r/UCONN/',
+            },
+            {
+              label: 'OPIM Innovate',
+              href: 'https://innovatelabs.uconn.edu/',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Projects',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Tech Kits',
+              href: 'https://innovatelabs.uconn.edu/opim-innovate-2/opim-innovate-tech-kit-2/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'IMA GitHub',
+              href: 'https://github.com/IMAUCONN',
             },
           ],
         },

@@ -3,18 +3,39 @@ import Layout from '@theme/Layout';
 import { Container, Grid } from '@material-ui/core';
 
 function Hello() {
+
+  const prefix = '../../static/img/company_logos';
+  const logos = [
+    'Accenture', 
+    'Cigna',
+    'Deloitte',
+    'EY',
+    'Northeast_Utilities',
+    'PWC',
+    'Synchrony',
+    'The_Hartford',
+    'Travelers',
+    'UTC'
+  ].map(x => `${prefix}/${x}.png`);
+
   return (
     <Layout>
       <Container maxWidth='xl'>
-        <Grid container direction='column'>
+        <h1 style={{marginTop:10, marginBottom:10}}>Companies That We Have Worked With: </h1>
+      <Grid container direction='row' alignItems='center' style={{backgroundColor:'lightgray', paddingLeft: 10, paddingRight:10, borderRadius: 10}}>
+        {logos.map((x, idx) => (
+          <Grid item xs key={`logo:${idx}`}>
+            <img src={x}></img>
+          </Grid>
+        ))}
+      </Grid>
+      <h1 style={{marginTop:10, marginBottom:10}} >Recruitment</h1>
+        <Grid container direction='column' alignItems='center'>
           <Grid item xs>
-            <h1>Recruitment</h1>
+            <p>A big part of IMA is connecting our students with potential employers. As part of this recruitment process, we strongly encourage companies to host information sessions with our club. This allows recruiters to meet potential candidates prior to the interviewing process and increase awareness of their companies.</p>
           </Grid>
           <Grid item xs>
-            <p>As part of the recruitment process, employers are strongly encouraged to host an information session which allows recruiters to informally meet potential candidates prior to their interviews. Information sessions also provide an opportunity for the employers to increase awareness of their company and additional career prospects.</p>
-          </Grid>
-          <Grid item xs>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwv5p0ITxzB0Tt7OA-PTIvalQ5BVzbJtqTbUniQE77PQv0_A/viewform?embedded=true" width="640" height="650" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwv5p0ITxzB0Tt7OA-PTIvalQ5BVzbJtqTbUniQE77PQv0_A/viewform?embedded=true" width="640" height="650" frameBorder="0">Loading…</iframe>
           </Grid>
       </Grid>
       </Container>
