@@ -17,12 +17,6 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {
           to: '/about_us/',
           label: 'About Us',
           position: 'left',
@@ -47,7 +41,6 @@ module.exports = {
           label: 'Technology',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
       ],
     },
     footer: {
