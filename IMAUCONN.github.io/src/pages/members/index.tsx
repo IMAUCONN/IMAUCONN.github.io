@@ -46,11 +46,11 @@ const rows = [
   //for loop items create data using name date location room and time in items'
   //for items: items
   //
-  createData('Frozen yoghurt', "159", "6", "24", "4.0"),
-  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
-  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
-  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
-  createData('Ice cream sandwich', "", "9.0", "37", "4.3"),
+  createData('OPIM Innovate Demo', "March 9, 2021", "N/A", "WebEx", "7:00PM EST"),
+  createData('Class Registration Meeting', "March 16, 2021", "N/A", "WebEx", "7:00PM EST"),
+  createData('IT Security with Kevin Brown', "March 23, 2021", "N/A", "WebEx", "7:00PM EST"),
+  createData('Salary Negotiation Workshop', "March 30, 2021", "N/A", "WebEx", "7:00PM EST"),
+  createData('The Hartford', "April 6, 2021", "N/A", "WebEx", "7:00PM EST"),
 ];
 
 export default function App() {
@@ -101,20 +101,20 @@ export default function App() {
         <TableHead>
           <TableRow>
             <TableCell><strong> Name </strong></TableCell>
-            <TableCell align="right"><strong> Date </strong></TableCell>
-            <TableCell align="right"><strong> Location </strong></TableCell>
-            <TableCell align="right"><strong> Room </strong></TableCell>
-            <TableCell align="right"><strong> Time </strong></TableCell>
+            <TableCell align="left"><strong> Date </strong></TableCell>
+            <TableCell align="left"><strong> Location </strong></TableCell>
+            <TableCell align="left"><strong> Room </strong></TableCell>
+            <TableCell align="left"><strong> Time </strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">{row.name}</TableCell>
-              <TableCell align="right">{row.date}</TableCell>
-              <TableCell align="right">{row.location}</TableCell>
-              <TableCell align="right">{row.room}</TableCell>
-              <TableCell align="right">{row.time}</TableCell>
+              <TableCell align="left">{row.date}</TableCell>
+              <TableCell align="left">{row.location}</TableCell>
+              <TableCell align="left">{row.room}</TableCell>
+              <TableCell align="left">{row.time}</TableCell>
             </TableRow>
           ))}
         </TableBody>
