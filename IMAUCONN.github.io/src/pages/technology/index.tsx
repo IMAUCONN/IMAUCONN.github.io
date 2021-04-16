@@ -1,5 +1,8 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import clsx from 'clsx';
 
 
 
@@ -7,18 +10,15 @@ import Layout from '@theme/Layout';
 function Hello() {
   return (
     <Layout title="Hello">
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '50vh',
-          fontSize: '20px',
-        }}>
-        <p>
-          Edit <code>pages/hello.js</code> and sfdgfdgdsflkjghdfkg.
-        </p>
-      </div>
+      <Link style={{marginRight:10}}
+        className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://innovatelabs.uconn.edu/opim-innovate-2/vibe/')}>Vibe Tech Kits
+      </Link>
+      <Link style={{marginRight:10}}
+        className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://opim.business.uconn.edu/')}>OPIM Department
+      </Link>
+      <Link style={{marginRight:10}}
+        className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://undergrad.business.uconn.edu/academics/majors/mis/')}>MIS Major
+      </Link>
     </Layout>
   );
 }
