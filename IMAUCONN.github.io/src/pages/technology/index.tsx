@@ -12,9 +12,9 @@ function Hello() {
   return (
     <Layout title="Hello">
       <Container maxWidth='xl'>
-        <h3 style={{marginTop: 10, marginBottom: 30}}>
+        <h1 style={{marginTop: 10, marginBottom: 30}}>
           Here are some additional resources we think are very valuable to MIS students:
-        </h3>
+        </h1>
         
         <Grid container direction='row' spacing={10}>
 

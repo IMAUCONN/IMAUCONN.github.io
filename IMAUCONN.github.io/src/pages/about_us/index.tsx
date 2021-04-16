@@ -132,7 +132,7 @@ export default function TextMobileStepper() {
       <Container maxWidth='xl'>
       <Grid container direction='column'>
           <Grid item >
-            <h1>About us</h1>
+            <h1 style={{marginTop:10}}> About us</h1>
           </Grid>
           <Grid item >
             <h2>Who we are:</h2> 
@@ -148,47 +148,49 @@ export default function TextMobileStepper() {
             <Grid item xs justify='flex-end'>
             <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
             </Grid>
-          </Grid >
-          <Grid item >
-            <h2>Meet the Executive Board:</h2> 
           </Grid>
-          <Grid item >
-            <AutoPlaySwipeableViews
-              axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-              index={activeStep}
-              onChangeIndex={handleStepChange}
-              enableMouseEvents>
-              {eboard.map((step, index) => (
-                <div key={step.label} className={classes.root}>
-                {Math.abs(activeStep - index) <= 2 ? (
-                  <Grid container direction='row' justify='center'>
-                    <Grid item sm={2}>
-                    <p className={classes.paragraph}> {step.paragraph} </p>
-                    </Grid>
-                    <Grid item sm={2}>
-                      <img className={classes.img} src={step.imgPath}/>
-                    </Grid>
-                    <Grid item sm={2} >
-                      <Grid container direction='column'>
-                          <text><h3>{step.position}</h3></text>
-                          <text>{step.name }</text> 
-                          <text>{step.year }</text> 
-                          <text>{step.major }</text> 
-                          <a href = {`mailto: ${step.email}`}><text>{step.email}</text></a> 
+          <Grid container style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
+            <Grid item style={{padding: 10}} >
+              <h2 >Meet the Executive Board:</h2> 
+            </Grid>
+            <Grid item >
+              <AutoPlaySwipeableViews
+                axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+                index={activeStep}
+                onChangeIndex={handleStepChange}
+                enableMouseEvents>
+                {eboard.map((step, index) => (
+                  <div key={step.label} className={classes.root}>
+                  {Math.abs(activeStep - index) <= 2 ? (
+                    <Grid container direction='row' justify='center'>
+                      <Grid item sm={2}>
+                      <p className={classes.paragraph}> {step.paragraph} </p>
                       </Grid>
-                    </Grid>
-                  </Grid>) : null}
-              </div>
-              ))}
-            </AutoPlaySwipeableViews>
-            <MobileStepper
-              steps={maxSteps}
-              position="static"
-              variant="text"
-              activeStep={activeStep}
-              nextButton={<Button size="small" onClick={handleNext}> Next <KeyboardArrowRight /> </Button>}
-              backButton={<Button size="small" onClick={handleBack}> <KeyboardArrowLeft/>Back</Button>}
-            />
+                      <Grid item sm={2}>
+                        <img className={classes.img} src={step.imgPath}/>
+                      </Grid>
+                      <Grid item sm={2} >
+                        <Grid container direction='column'>
+                            <text><h3>{step.position}</h3></text>
+                            <text>{step.name }</text> 
+                            <text>{step.year }</text> 
+                            <text>{step.major }</text> 
+                            <a href = {`mailto: ${step.email}`}><text>{step.email}</text></a> 
+                        </Grid>
+                      </Grid>
+                    </Grid>) : null}
+                </div>
+                ))}
+              </AutoPlaySwipeableViews>
+              <MobileStepper
+                steps={maxSteps}
+                position="static"
+                variant="text"
+                activeStep={activeStep}
+                nextButton={<Button size="small" onClick={handleNext}> Next <KeyboardArrowRight /> </Button>}
+                backButton={<Button size="small" onClick={handleBack}> <KeyboardArrowLeft/>Back</Button>}
+              />
+            </Grid>
           </Grid>
         </Grid>
       </Container>
