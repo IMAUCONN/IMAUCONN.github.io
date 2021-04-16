@@ -135,6 +135,7 @@ export default function TextMobileStepper() {
           <Grid container direction='row'>  
             <Grid item xs justify='flex-start'>
               <Grid>   
+                {/* This is where you can change introductory text of the about us page. */}
                   <p>The Information Management Association (IMA) is a student-run organization, at the University of Connecticut, that provides resources for students interested in the field of Information Technology. We allow students to develop their professional skill-set by connecting them to relevant job opportunities, all while creating an inviting community.</p>
                   <p>Our meetings and events involve inviting IT representatives from various industries to connect with students and teach them about the industry, their specific companies, and potential job opportunities. We also focus on professional development by offering networking opportunities, resume building workshops, and mock interviews.</p>
                   <p>Together we create a network of individuals passionate about information systems, analytics, and industry technology. </p> 
