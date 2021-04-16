@@ -29,11 +29,14 @@ import { Grid, Container } from '@material-ui/core';
 //     }));
 //     return (feedItems);
 // }
-// const useStyles = makeStyles({
-//   table: {
-//     minWidth: 650,
-//   },
-// });
+const useStyles = makeStyles({
+  table: {
+    minWidth: 650,
+  },
+  header: {
+    paddingTop: 10,
+  }
+});
 
 function createData(name: string, date: string, location: string, room: string, time: string) {
   return {name, date, location, room, time};
@@ -53,54 +56,50 @@ const rows = [
 export default function App() {
   return (
     <Layout title="Hello">
-      <Container>
-        <Grid container direction='column'>
-          <Grid item direction='row'>
-            <h2>
+      <Container maxWidth='xl'>
+            <h1 style={{marginTop:10, marginBottom:10}}>
               Welcome current and prospecting members! 
-            </h2>
+            </h1>
             <p> 
               Being a member of IMA is the first step to secure a job in the IT field upon graduation. IMA membership will not only give you a wealth of information relevant to the IT industry today, but it will provide you with invaluable networking and professional development opportunities. 
             </p>
             <p>
               So, we are so happy to have you here!
             </p>
-          </Grid>
-
-          <Grid item justify='flex-start'>
-            <h2>
-              Membership
-            </h2>
-            <p>
-              If you are interested in joining IMA, please click on the button below. 
-            </p>
-            <Link
-              className={clsx('button button--outline button--secondary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Join Now
-            </Link>
-          </Grid>
-
-          <Grid item justify='flex-end'>
-            <h2>
-              Meetings
-            </h2>
-            <p>
-              IMA meetings give students the opportunity to network with employers and also participate in technical workshops to improve various skillsets.  
-              <strong> Tuesday</strong> meetings are typically reserved for company recruitment and networking. <strong>Wednesday</strong> meetings are typically reserved for technical workshops and hands-on experience in the Gladstein Lab. 
-              are typically held every week.
-            </p>
-            <p>
-              If you are looking to sign into a meeting or are inteested in reviewing our meeting minutes, please click the respective buttons below. 
-            </p>
-            <Link
-              className={clsx('button button--outline button--secondary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Sign In
-            </Link>
-            <Link
-              className={clsx('button button--outline button--secondary button--lg',)}to={useBaseUrl('docs/')}>Meeting Minutes
-            </Link>
-          </Grid>
-        </Grid>
+            <Grid container direction='row'>
+            <Grid item xs>
+                <h2 style={{marginTop:10, marginBottom:10}}>
+                Meetings
+                </h2>
+                <p>
+                  IMA meetings give students the opportunity to network with employers and also participate in technical workshops to improve various skillsets.  
+                  <strong> Tuesday</strong> meetings are typically reserved for company recruitment and networking. <strong>Wednesday</strong> meetings are typically reserved for technical workshops and hands-on experience in the Gladstein Lab. 
+                  are typically held every week.
+                </p>
+                <p>
+                  If you are looking to sign into a meeting or are inteested in reviewing our meeting minutes, please click the respective buttons below. 
+                </p>
+                <Link style={{marginRight:10}}
+                  className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Sign In
+                </Link>
+                <Link
+                  className={clsx('button  button--secondary button--lg',)}to={useBaseUrl('docs/')}>Meeting Minutes
+                </Link>
+              </Grid>
+              <Grid item xs>
+                <h2 style={{marginTop:10, marginBottom:10}}>
+                  Membership
+                </h2>
+                <p>
+                  If you are interested in joining IMA, please click on the button below. 
+                </p>
+                <Link 
+                  className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Join Now
+                </Link>
+              </Grid> 
+            </Grid>
         
-        <h3>Upcoming Meetings</h3>
+        <h2 style={{marginTop:10, marginBottom:10}}>Upcoming Meetings</h2>
         <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
