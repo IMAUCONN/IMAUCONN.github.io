@@ -90,22 +90,17 @@ const useStyles =
       height: 500,
     },
     img: {
-      height: 255,
+      height: 300,
       display: 'block',
-      maxWidth: 255,
+      maxWidth: 300,
       overflow: 'hidden',
       width: '100%',
-      paddingLeft: 20
     },
     bigimg: {
       MaxHeight: 600,
       maxWidth: 600,
       paddingLeft: 15
     },
-    paragraph:
-    {
-      paddingRight: 10
-    }
   }),
 );
 
@@ -149,11 +144,11 @@ export default function TextMobileStepper() {
             <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
             </Grid>
           </Grid>
-          <Grid container style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
-            <Grid item style={{padding: 10}} >
-              <h2 >Meet the Executive Board:</h2> 
+          <Grid container justify="center" style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
+            <Grid item>
+              <h1 style={{marginBottom: 10, marginTop: 10}}>Meet the Executive Board</h1> 
             </Grid>
-            <Grid item >
+            <Grid item>
               <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
@@ -162,22 +157,24 @@ export default function TextMobileStepper() {
                 {eboard.map((step, index) => (
                   <div key={step.label} className={classes.root}>
                   {Math.abs(activeStep - index) <= 2 ? (
-                    <Grid container direction='row' justify='center'>
-                      <Grid item sm={2}>
-                      <p className={classes.paragraph}> {step.paragraph} </p>
+                    <Grid container direction='row' justify='space-evenly'>
+                     <Grid item sm={2}>
+                      <h2>About me</h2>
+                      <p> {step.paragraph} </p>
                       </Grid>
                       <Grid item sm={2}>
                         <img className={classes.img} src={step.imgPath}/>
                       </Grid>
+                      
                       <Grid item sm={2} >
-                        <Grid container direction='column'>
-                            <text><h3>{step.position}</h3></text>
+                      <Grid container direction='column'>
+                            <text><h2>{step.position}</h2></text>
                             <text>{step.name }</text> 
                             <text>{step.year }</text> 
                             <text>{step.major }</text> 
                             <a href = {`mailto: ${step.email}`}><text>{step.email}</text></a> 
+                            </Grid>
                         </Grid>
-                      </Grid>
                     </Grid>) : null}
                 </div>
                 ))}
