@@ -29,11 +29,14 @@ import { Grid, Container } from '@material-ui/core';
 //     }));
 //     return (feedItems);
 // }
-// const useStyles = makeStyles({
-//   table: {
-//     minWidth: 650,
-//   },
-// });
+const useStyles = makeStyles({
+  table: {
+    minWidth: 650,
+  },
+  header: {
+    paddingTop: 10,
+  }
+});
 
 function createData(name: string, date: string, location: string, room: string, time: string) {
   return {name, date, location, room, time};
@@ -102,7 +105,7 @@ export default function App() {
           </Grid>
         </Grid>
         
-        <h3>Upcoming Meetings</h3>
+        <h2 style={{marginTop:10, marginBottom:10}}>Upcoming Meetings</h2>
         <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
