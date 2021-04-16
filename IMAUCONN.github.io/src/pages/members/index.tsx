@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import clsx from 'clsx';
 import { makeStyles, TableContainer, Table, TableHead, Paper, TableBody, TableCell, TableRow } from '@material-ui/core';
-import { Grid, Container } from '@material-ui/core';
+import { Grid, Container, GridSpacing } from '@material-ui/core';
 
 
 // function strip(str: string) : string
@@ -58,15 +58,9 @@ export default function App() {
     <Layout title="Hello">
       <Container maxWidth='xl'>
             <h1 style={{marginTop:10, marginBottom:10}}>
-              Welcome current and prospecting members! 
+              Welcome Current and Prospecting Members! 
             </h1>
-            <p> 
-              Being a member of IMA is the first step to secure a job in the IT field upon graduation. IMA membership will not only give you a wealth of information relevant to the IT industry today, but it will provide you with invaluable networking and professional development opportunities. 
-            </p>
-            <p>
-              So, we are so happy to have you here!
-            </p>
-            <Grid container direction='row'>
+            <Grid container direction='row' spacing={4}>
             <Grid item xs>
                 <h2 style={{marginTop:10, marginBottom:10}}>
                 Meetings
@@ -74,10 +68,9 @@ export default function App() {
                 <p>
                   IMA meetings give students the opportunity to network with employers and also participate in technical workshops to improve various skillsets.  
                   <strong> Tuesday</strong> meetings are typically reserved for company recruitment and networking. <strong>Wednesday</strong> meetings are typically reserved for technical workshops and hands-on experience in the Gladstein Lab. 
-                  are typically held every week.
                 </p>
                 <p>
-                  If you are looking to sign into a meeting or are inteested in reviewing our meeting minutes, please click the respective buttons below. 
+                  If you are looking to sign into a meeting or are interested in reviewing our meeting minutes, please click the respective buttons below. 
                 </p>
                 <Link style={{marginRight:10}}
                   className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Sign In
@@ -91,6 +84,9 @@ export default function App() {
                   Membership
                 </h2>
                 <p>
+                Being a member of IMA is the first step in securing a job in the IT field upon graduation. IMA membership will not only give you a wealth of information relevant to the IT industry today, but it will provide you with invaluable networking and professional development opportunities.
+                </p>
+                <p>
                   If you are interested in joining IMA, please click on the button below. 
                 </p>
                 <Link 
@@ -99,16 +95,16 @@ export default function App() {
               </Grid> 
             </Grid>
         
-        <h2 style={{marginTop:10, marginBottom:10}}>Upcoming Meetings</h2>
+        <h2 style={{marginTop:20, marginBottom:10}}>Upcoming Meetings</h2>
         <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell align="right">Date</TableCell>
-            <TableCell align="right">Location</TableCell>
-            <TableCell align="right">Room</TableCell>
-            <TableCell align="right">Time</TableCell>
+            <TableCell><strong> Name </strong></TableCell>
+            <TableCell align="right"><strong> Date </strong></TableCell>
+            <TableCell align="right"><strong> Location </strong></TableCell>
+            <TableCell align="right"><strong> Room </strong></TableCell>
+            <TableCell align="right"><strong> Time </strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -137,4 +133,3 @@ export default function App() {
       </Container>
     </Layout>
   );}
-

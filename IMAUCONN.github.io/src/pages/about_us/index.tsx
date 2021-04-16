@@ -99,10 +99,8 @@ const useStyles =
     bigimg: {
       MaxHeight: 600,
       maxWidth: 600,
-    },
-    paragraph: {
-      marginRight: 50
-    },
+      paddingLeft: 15
+    }
   }),
 );
 
@@ -158,15 +156,15 @@ export default function TextMobileStepper() {
               {eboard.map((step, index) => (
                 <div key={step.label} className={classes.root}>
                 {Math.abs(activeStep - index) <= 2 ? (
-                  <Grid container direction='row' justify='center'>
+                  <Grid container direction='row' justify='center' spacing={2}>
                     <Grid item sm={4}>
-                    <p className={classes.paragraph}>{step.paragraph}</p>
+                    <p> {step.paragraph} </p>
                     </Grid>
                     <Grid item sm={2}>
                       <img className={classes.img} src={step.imgPath}/>
                     </Grid>
-                    <Grid item sm={4}>
-                      <Grid container direction= 'column'>
+                    <Grid item sm={4} >
+                      <Grid container direction='column'>
                           <text><h3>{step.position}</h3></text>
                           <text>{step.name }</text> 
                           <text>{step.year }</text> 
