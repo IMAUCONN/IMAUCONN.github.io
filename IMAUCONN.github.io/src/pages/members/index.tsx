@@ -54,22 +54,18 @@ export default function App() {
   return (
     <Layout title="Hello">
       <Container>
+        <h2>
+          Welcome current and prospecting members! 
+        </h2>
+        <p> 
+          Being a member of IMA is the first step to secure a job in the IT field upon graduation. IMA membership will not only give you a wealth of information relevant to the IT industry today, but it will provide you with invaluable networking and professional development opportunities. 
+        </p>
+        <p>
+          So, we are so happy to have you here!
+        </p>
 
         <Grid container direction='row'>
-
-          <Grid>
-              <h2>
-                Welcome current and prospecting members! 
-              </h2>
-              <p> 
-                Being a member of IMA is the first step to secure a job in the IT field upon graduation. IMA membership will not only give you a wealth of information relevant to the IT industry today, but it will provide you with invaluable networking and professional development opportunities. 
-              </p>
-              <p>
-                So, we are so happy to have you here!
-              </p>
-          </Grid>
-
-          <Grid item justify='flex-start'>
+          <Grid item xs justify='flex-start'>
             <Container>
               <h2>
                 Membership
@@ -83,7 +79,7 @@ export default function App() {
             </Container>
           </Grid>
 
-          <Grid item justify='flex-end'>
+          <Grid item xs justify='flex-end'>
             <Container>
               <h2>
                 Meetings
@@ -104,7 +100,6 @@ export default function App() {
               </Link>
             </Container>
           </Grid>
-
         </Grid>
         
         <h3>Upcoming Meetings</h3>
