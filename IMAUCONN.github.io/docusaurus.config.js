@@ -5,23 +5,21 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/ima_logo_white.png',
   organizationName: 'IMAUCONN', // Usually your GitHub org/user name.
   projectName: 'IMAUCONN.github.io', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      disableSwitch: true
+    },
     navbar: {
       title: 'UConn IMA',
+      style: 'dark',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/ima_logo.png',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
         {
           to: '/about_us/',
           label: 'About Us',
@@ -47,7 +45,6 @@ module.exports = {
           label: 'Technology',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
       ],
     },
     footer: {
