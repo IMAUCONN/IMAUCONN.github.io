@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/headshots/icon1.ico',
   organizationName: 'IMAUCONN', // Usually your GitHub org/user name.
   projectName: 'IMAUCONN.github.io', // Usually your repo name.
   themeConfig: {
@@ -13,7 +13,7 @@ module.exports = {
       title: 'UConn IMA',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/headshots/logo.jpg',
       },
       items: [
         {

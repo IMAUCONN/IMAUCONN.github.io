@@ -18,13 +18,13 @@ const features = [
     ),
   },
   {
-    title: 'Foc on WhaMatters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
+  
+  
+  
+      
          
-      </>
-    ),
+      
+    
   },
   {
     title: 'Picture of Members',
@@ -69,7 +69,7 @@ function Home() {
               className={clsx(
                 'button button--outline button--secondary button--lg',
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('https://docs.google.com/forms/d/e/1FAIpQLScZdMzhfu0VgPVrOcPrXRUVV17ijf9Mp2t0nZ_jBZv2r9JUxw/viewform')}>
               Join!
             </Link>
           </div>
