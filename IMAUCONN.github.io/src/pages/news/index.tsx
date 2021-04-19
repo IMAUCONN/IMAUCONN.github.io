@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Layout from '@theme/Layout';
 
 function strip(str: string) : string
 {
@@ -24,6 +25,7 @@ export default function App() {
   const [items, setItems] = useState([]);
   
   return (
+    <Layout title="News">
     <div className="App">
       <button onClick= {async () => {console.log("refresing");setItems(await rssitems())}}> refresh</button>
       {items.map((item) => {
@@ -36,5 +38,6 @@ export default function App() {
         );
       })}
     </div>
+    </Layout>
   );
 }
