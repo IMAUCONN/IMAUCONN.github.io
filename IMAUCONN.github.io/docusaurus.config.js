@@ -5,23 +5,21 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/headshots/icon1.ico',
+  favicon: 'img/ima_logo_white.png',
   organizationName: 'IMAUCONN', // Usually your GitHub org/user name.
   projectName: 'IMAUCONN.github.io', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      disableSwitch: true
+    },
     navbar: {
       title: 'UConn IMA',
+      style: 'dark',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/headshots/logo.jpg',
+        src: 'img/ima_logo.png',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
         {
           to: '/about_us/',
           label: 'About Us',
@@ -47,12 +45,6 @@ module.exports = {
           label: 'Technology',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -63,11 +55,11 @@ module.exports = {
           items: [
             {
               label: 'Instagram',
-              to: 'https://www.instagram.com/imauconn//',
+              href: 'https://www.instagram.com/imauconn/',
             },
             {
               label: 'Facebook',
-              to: 'https://www.facebook.com/UConnIMA',
+              href: 'https://www.facebook.com/UConnIMA/',
             },
           ],
         },
@@ -75,16 +67,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'MIS Discord',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Discord',
+              href: 'https://discord.gg/rhN7pYrWVV',
             },
             {
-              label: 'Uconn Reddit',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'UCONN Reddit',
+              href: 'https://www.reddit.com/r/UCONN/',
             },
             {
-              label: 'Linkedln',
-              href: 'https://twitter.com/docusaurus',
+              label: 'OPIM Innovate',
+              href: 'https://innovatelabs.uconn.edu/',
             },
           ],
         },
@@ -92,12 +84,12 @@ module.exports = {
           title: 'Projects',
           items: [
             {
-              label: 'IMA Github',
-              to: 'blog',
+              label: 'Tech Kits',
+              href: 'https://innovatelabs.uconn.edu/opim-innovate-2/opim-innovate-tech-kit-2/',
             },
             {
-              label: 'Tech Kits',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'IMA GitHub',
+              href: 'https://github.com/IMAUCONN',
             },
           ],
         },
@@ -112,8 +104,6 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
