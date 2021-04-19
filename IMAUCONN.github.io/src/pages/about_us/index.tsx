@@ -143,6 +143,10 @@ export default function TextMobileStepper() {
             <Grid item xs justify='flex-end'>
             <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
             </Grid>
+          </Grid >
+          <Grid item>
+            <h2>Meet the Executive Board:</h2> 
+          
           </Grid>
           <Grid container justify="center" style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
             <Grid item>

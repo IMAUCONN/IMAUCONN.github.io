@@ -1,6 +1,6 @@
 module.exports = {
   title: 'UConn IMA',
-  tagline: 'Cool line of text to talk about',
+  tagline: 'The Information Management Association (IMA) at the University of Connecticut is a student-run organization that provides resources for students interested in the field of Information Technology. Our meetings and events involve inviting IT representatives from various industries to speak to students about their company, job prospects in the field, recruitment, informational sessions, resume building, conduct mock interviews, and the art of networking.',
   url: 'https://IMAUCONN.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
