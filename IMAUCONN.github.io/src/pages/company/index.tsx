@@ -20,7 +20,7 @@ function Hello() {
   ].map(x => `${prefix}/${x}.png`);
 
   return (
-    <Layout>
+    <Layout title="Company">
       <Container maxWidth='xl'>
         <h1 style={{marginTop:10, marginBottom:10}}>Companies That We Have Worked With: </h1>
       <Grid container direction='row' alignItems='center' style={{backgroundColor:'lightgray', paddingLeft: 10, paddingRight:10, borderRadius: 10}}>

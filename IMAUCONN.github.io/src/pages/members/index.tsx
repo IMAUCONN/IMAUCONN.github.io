@@ -55,14 +55,14 @@ const rows = [
 
 export default function App() {
   return (
-    <Layout title="Hello">
+    <Layout title="Members">
       <Container maxWidth='xl'>
-            <h1 style={{marginTop:10, marginBottom:30}}>
+            <h1 style={{marginTop:10, marginBottom:25}}>
               Welcome Current and Prospecting Members! 
             </h1>
             <Grid container direction='row' spacing={4} style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
             <Grid item xs>
-                <h2 style={{marginTop:10, marginBottom:10}}>
+                <h2 style={{marginBottom:10}}>
                 Meetings
                 </h2>
                 <p>
@@ -73,14 +73,14 @@ export default function App() {
                   If you are looking to sign into a meeting or are interested in reviewing our meeting minutes, please click the respective buttons below. 
                 </p>
                 <Link style={{marginRight:10}}
-                  className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Sign In
+                  className={clsx('button button--primary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Sign In
                 </Link>
                 <Link
-                  className={clsx('button  button--secondary button--lg',)}to={useBaseUrl('docs/')}>Meeting Minutes
+                  className={clsx('button  button--primary button--lg',)}to={useBaseUrl('docs/')}>Meeting Minutes
                 </Link>
               </Grid>
               <Grid item xs>
-                <h2 style={{marginTop:10, marginBottom:10}}>
+                <h2 style={{marginBottom:10}}>
                   Membership
                 </h2>
                 <p>
@@ -90,7 +90,7 @@ export default function App() {
                   If you are interested in joining IMA, please click on the button below. 
                 </p>
                 <Link 
-                  className={clsx('button button--secondary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Join Now
+                  className={clsx('button button--primary button--lg',)}to={useBaseUrl('https://uconntact.uconn.edu/organization/ima')}>Join Now
                 </Link>
               </Grid> 
             </Grid>
