@@ -95,11 +95,13 @@ const useStyles =
       maxWidth: 300,
       overflow: 'hidden',
       width: '100%',
+      borderRadius: 5
     },
     bigimg: {
       MaxHeight: 600,
       maxWidth: 600,
-      paddingLeft: 15
+      paddingLeft: 15,
+      borderRadius: 45
     },
   }),
 );
@@ -123,7 +125,7 @@ export default function TextMobileStepper() {
   };
 
   return (
-    <Layout>
+    <Layout title="About Us">
       <Container maxWidth='xl'>
       <Grid container direction='column'>
           <Grid item >
@@ -132,7 +134,7 @@ export default function TextMobileStepper() {
           <Grid item >
             <h2>Who we are:</h2> 
           </Grid>
-          <Grid container direction='row'>  
+          <Grid container direction='row' style={{paddingBottom: 15}}>  
             <Grid item xs justify='flex-start'>
               <Grid>   
                   <p>The Information Management Association (IMA) is a student-run organization, at the University of Connecticut, that provides resources for students interested in the field of Information Technology. We allow students to develop their professional skill-set by connecting them to relevant job opportunities, all while creating an inviting community.</p>
@@ -144,13 +146,9 @@ export default function TextMobileStepper() {
             <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
             </Grid>
           </Grid >
-          <Grid item>
-            <h2>Meet the Executive Board:</h2> 
-          
-          </Grid>
           <Grid container justify="center" style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
             <Grid item>
-              <h1 style={{marginBottom: 10, marginTop: 10}}>Meet the Executive Board</h1> 
+              <h1 style={{marginBottom: 20, marginTop: 20}}>Meet the Executive Board</h1> 
             </Grid>
             <Grid item>
               <AutoPlaySwipeableViews
@@ -162,15 +160,15 @@ export default function TextMobileStepper() {
                   <div key={step.label} className={classes.root}>
                   {Math.abs(activeStep - index) <= 2 ? (
                     <Grid container direction='row' justify='space-evenly'>
-                     <Grid item sm={2}>
+                     <Grid item sm={3}>
                       <h2>About me</h2>
                       <p> {step.paragraph} </p>
                       </Grid>
-                      <Grid item sm={2}>
+                      <Grid item sm={3}>
                         <img className={classes.img} src={step.imgPath}/>
                       </Grid>
                       
-                      <Grid item sm={2} >
+                      <Grid item sm={3} >
                       <Grid container direction='column'>
                             <text><h2>{step.position}</h2></text>
                             <text>{step.name }</text> 
