@@ -57,10 +57,10 @@ export default function App() {
   return (
     <Layout title="Hello">
       <Container maxWidth='xl'>
-            <h1 style={{marginTop:10, marginBottom:10}}>
+            <h1 style={{marginTop:10, marginBottom:30}}>
               Welcome Current and Prospecting Members! 
             </h1>
-            <Grid container direction='row' spacing={4}>
+            <Grid container direction='row' spacing={4} style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
             <Grid item xs>
                 <h2 style={{marginTop:10, marginBottom:10}}>
                 Meetings
