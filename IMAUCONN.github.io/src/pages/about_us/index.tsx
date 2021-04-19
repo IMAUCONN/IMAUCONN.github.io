@@ -11,7 +11,7 @@ import { autoPlay } from 'react-swipeable-views-utils';
 import { FormatBold } from '@material-ui/icons';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
+{/* This is where you can change widget information */}
 const eboard = [
   {
     name: "Jessica Roberts",
@@ -20,7 +20,6 @@ const eboard = [
     major: "MIS",
     email: "jessica.r.roberts@uconn.edu",
     paragraph: "My name is Jessica Roberts and I'm a senior MIS major with an Analytics minor. I'm currently the president of IMA, which has taught me many useful technical skills. I'm interested in UX Design and after graduation, I hope to continue working with Raytheon Technologies.",
-    label: 'San Francisco – Oakland Bay Bridge, United States',
     imgPath: '../../static/img/headshots/president.png',
   },
   {
@@ -30,7 +29,6 @@ const eboard = [
     major: "MIS",
     email: "robert.fisk_jr@uconn.edu",
     paragraph: "My name is Bob Fisk and I am a junior MIS major. I am currently the Vice President of IMA and Secretary of UConn's Alpha Lambda Delta Honor Society. After graduation, I hope to pursue a career in Management Consulting.",
-    label: 'Bird',
     imgPath: '../../static/img/headshots/vice_president.png',
   },
   {
@@ -40,7 +38,6 @@ const eboard = [
     major: "MIS",
     email: "maciej.kossuth@uconn.edu",
     paragraph: "My name is Maciej (Mac) Kossuth and I'm a junior MIS major with Analytics and Mathematics minors. I'm currently the secretary of IMA, which has helped me build an extended network with recruiters and learn more about the opportunities offered in the School of Business. I'm interested in working in Data Anlytics and, after graduation, I hope to enroll in the MSBAPM program and continue my work at Travelers.",
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
     imgPath:'../../static/img/headshots/secretary.png',
   },
   {
@@ -50,7 +47,6 @@ const eboard = [
     major: "MIS",
     email: "suyang.xu@uconn.edu",
     paragraph: "My name is Suyang (Claire) Xu and I'm a senior MIS major with an Analytics minor. I'm currently the treasurer of IMA, which has helped me gain interesting technological expereinces as well as many excellect networking opportunities. I'm interested in Data Mining and Analysis. I want to be a Business Analyst after graduation.",
-    label: 'Bali, Indonesia',
     imgPath: '../../static/img/headshots/treasurer.png'
   },
   {
@@ -60,7 +56,6 @@ const eboard = [
     major: "MIS",
     email: "jody.kung@uconn.edu",
     paragraph: "My name is Jody Kung and I am a Junior MIS major with a Marketing minor. During my time as an undergraduate, I've taken on leadership positions in organizations like the Learning Community Ececutive Council, Pi Beta Phi, and HackUConn, which have enabled me to sharpen my project management and problem-solving skills.",
-    label: 'Goč, Serbia',
     imgPath:'../../static/img/headshots/cmo.png',
   },
   {
@@ -70,11 +65,10 @@ const eboard = [
     major: "Finance",
     email: "robert.damjanovich@uconn.edu",
     paragraph: "My name is Robert Damjanovich and I am a sophomore Finance major. In addition to being CTO for IMA, I am also Secretary for the Polish Cultural Society. I like to trade stock and am interested in Investment Banking. After graduation, I hope to be employed in one of the major Finance firms.",
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
     imgPath:'../../static/img/headshots/cto.png',
   },
 ];
-
+{/* Styling for the website*/}
 const useStyles =
  makeStyles((theme: Theme) =>
   createStyles({
@@ -109,7 +103,7 @@ export default function TextMobileStepper() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = eboard.length;
-
+ {/* Functions for the widget */}
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1 == eboard.length ? 0 : prevActiveStep + 1);
   };
@@ -142,6 +136,7 @@ export default function TextMobileStepper() {
               </Grid>
             </Grid>
             <Grid item xs justify='flex-end'>
+            {/* This is the picture */}
             <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
             </Grid>
           </Grid>
@@ -150,13 +145,14 @@ export default function TextMobileStepper() {
               <h1 style={{marginBottom: 10, marginTop: 10}}>Meet the Executive Board</h1> 
             </Grid>
             <Grid item>
+               {/* This is the widget*/}
               <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
                 onChangeIndex={handleStepChange}
                 enableMouseEvents>
                 {eboard.map((step, index) => (
-                  <div key={step.label} className={classes.root}>
+                  <div className={classes.root}>
                   {Math.abs(activeStep - index) <= 2 ? (
                     <Grid container direction='row' justify='space-evenly'>
                      <Grid item sm={2}>
