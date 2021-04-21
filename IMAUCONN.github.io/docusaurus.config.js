@@ -10,7 +10,8 @@ module.exports = {
   projectName: 'IMAUCONN.github.io', // Usually your repo name.
   themeConfig: {
     colorMode: {
-      disableSwitch: true
+      disableSwitch: true,
+      defaultMode: 'light'
     },
     navbar: {
       title: 'UConn IMA',

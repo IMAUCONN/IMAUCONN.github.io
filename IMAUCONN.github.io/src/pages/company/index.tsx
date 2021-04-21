@@ -3,8 +3,7 @@ import Layout from '@theme/Layout';
 import { Container, Grid } from '@material-ui/core';
 
 function Hello() {
-
-  const prefix = '../../static/img/company_logos';
+  const prefix = '/img/company/';
   const logos = [
     'Accenture', 
     'Cigna',

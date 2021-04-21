@@ -9,11 +9,11 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'The Glabstein Lab',
-    imageUrl: 'img/lab.jpg'
+    imageUrl: '/img/home-page/lab.jpg'
   },
   {
     title: 'Executive Board',
-    imageUrl: 'img/headshots/eboard.jpg'
+    imageUrl: 'img/home-page/eboard.jpg'
   },
 ];
 
