@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/ima_logo_white.png',
+  favicon: 'img/home-page/ima_logo_white.png',
   organizationName: 'IMAUCONN', // Usually your GitHub org/user name.
   projectName: 'IMAUCONN.github.io', // Usually your repo name.
   themeConfig: {
@@ -18,7 +18,7 @@ module.exports = {
       style: 'dark',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/ima_logo.png',
+        src: 'img/home-page/ima_logo.png',
       },
       items: [
         {
