@@ -22,7 +22,7 @@ function Hello() {
     <Layout title="Company">
       <Container maxWidth='xl'>
         <h1 style={{marginTop:10, marginBottom:10}}>Companies That We Have Worked With: </h1>
-      <Grid container direction='row' alignItems='center' style={{backgroundColor:'lightgray', paddingLeft: 10, paddingRight:10, borderRadius: 10}}>
+      <Grid container direction='row' alignItems='center' style={{backgroundColor:'lightgrey', paddingLeft: 10, paddingRight:10, borderRadius: 10}}>
         {logos.map((x, idx) => (
           <Grid item xs key={`logo:${idx}`}>
             <img src={x}></img>
