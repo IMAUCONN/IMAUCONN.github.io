@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import { Container, Grid } from '@material-ui/core';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function Hello() {
   const prefix = '/img/company/';

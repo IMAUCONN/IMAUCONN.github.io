@@ -9,7 +9,7 @@ import { Box, Container, Grid, Hidden, Paper, StylesProvider } from '@material-u
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import { FormatBold } from '@material-ui/icons';
-
+import useBaseUrl from '@docusaurus/useBaseUrl';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const eboard = [
@@ -21,7 +21,7 @@ const eboard = [
     email: "jessica.r.roberts@uconn.edu",
     paragraph: "My name is Jessica Roberts and I'm a senior MIS major with an Analytics minor. I'm currently the president of IMA, which has taught me many useful technical skills. I'm interested in UX Design and after graduation, I hope to continue working with Raytheon Technologies.",
     label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath: '/img/about_us/president.png',
+    imgPath: 'img/about_us/president.png',
   },
   {
     name: "Bob Fisk",
@@ -31,7 +31,7 @@ const eboard = [
     email: "robert.fisk_jr@uconn.edu",
     paragraph: "My name is Bob Fisk and I am a junior MIS major. I am currently the Vice President of IMA and Secretary of UConn's Alpha Lambda Delta Honor Society. After graduation, I hope to pursue a career in Management Consulting.",
     label: 'Bird',
-    imgPath: '/img/about_us/vice_president.png',
+    imgPath: 'img/about_us/vice_president.png',
   },
   {
     name: "Maciej (Mac) Kossuth",
@@ -41,7 +41,7 @@ const eboard = [
     email: "maciej.kossuth@uconn.edu",
     paragraph: "My name is Maciej (Mac) Kossuth and I'm a junior MIS major with Analytics and Mathematics minors. I'm currently the secretary of IMA, which has helped me build an extended network with recruiters and learn more about the opportunities offered in the School of Business. I'm interested in working in Data Anlytics and, after graduation, I hope to enroll in the MSBAPM program and continue my work at Travelers.",
     label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:'/img/about_us/secretary.png',
+    imgPath:'img/about_us/secretary.png',
   },
   {
     name: "Suyang (Claire) Xu",
@@ -51,7 +51,7 @@ const eboard = [
     email: "suyang.xu@uconn.edu",
     paragraph: "My name is Suyang (Claire) Xu and I'm a senior MIS major with an Analytics minor. I'm currently the treasurer of IMA, which has helped me gain interesting technological expereinces as well as many excellect networking opportunities. I'm interested in Data Mining and Analysis. I want to be a Business Analyst after graduation.",
     label: 'Bali, Indonesia',
-    imgPath: '/img/about_us/treasurer.png'
+    imgPath: 'img/about_us/treasurer.png'
   },
   {
     name: "Jody Kung",
@@ -61,7 +61,7 @@ const eboard = [
     email: "jody.kung@uconn.edu",
     paragraph: "My name is Jody Kung and I am a Junior MIS major with a Marketing minor. During my time as an undergraduate, I've taken on leadership positions in organizations like the Learning Community Ececutive Council, Pi Beta Phi, and HackUConn, which have enabled me to sharpen my project management and problem-solving skills.",
     label: 'Goč, Serbia',
-    imgPath:'/img/about_us/cmo.png',
+    imgPath:'img/about_us/cmo.png',
   },
   {
     name: "Robert Damjanovich",
@@ -71,7 +71,7 @@ const eboard = [
     email: "robert.damjanovich@uconn.edu",
     paragraph: "My name is Robert Damjanovich and I am a sophomore Finance major. In addition to being CTO for IMA, I am also Secretary for the Polish Cultural Society. I like to trade stock and am interested in Investment Banking. After graduation, I hope to be employed in one of the major Finance firms.",
     label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:'/img/about_us/cto.png',
+    imgPath:'img/about_us/cto.png',
   },
 ];
 
@@ -165,7 +165,7 @@ export default function TextMobileStepper() {
                       <p> {step.paragraph} </p>
                       </Grid>
                       <Grid item sm={3}>
-                        <img className={classes.img} src={step.imgPath}/>
+                        <img className={classes.img} src={useBaseUrl(step.imgPath)} />
                       </Grid>
                       
                       <Grid item sm={3} >
