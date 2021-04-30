@@ -8,16 +8,16 @@ import { Grid, Container, StylesProvider } from '@material-ui/core';
 function Hello() {
   return (
     <Layout title="Technology">
-      <Container maxWidth='xl'>
+      <Container maxWidth='xl' >
         {/* Header to the technology page */}
-        <h1 style={{marginTop: 10, marginBottom: 10}}> 
+        <h1 style={{marginTop: 10, marginBottom: 20}}> 
         Additional Resources That Are Very Valuable to IMA Members:
         </h1>
-        <Grid xl container direction='row'>
+        <Grid xl container direction='row' style={{ gap: 32 }}>
           <Grid md container direction='column' alignItems='center' spacing={2}> 
             <Grid item xs>
               {/* Picture of VIBE */}
-              <img 
+              <img style={{borderRadius: 20}}
               src="https://innovatelabs.uconn.edu/wp-content/uploads/sites/2164/2021/03/VIBE_logo2-400x400.jpg"
               alt="Picture of VIBE logo" width="200" height="200">
               </img>
@@ -42,7 +42,7 @@ function Hello() {
           <Grid md container direction='column' alignItems='center' spacing={2}> 
             <Grid item xs>
               {/* Picture of OPIM Department */}
-              <img 
+              <img style={{borderRadius: 20}}
               src="https://opim.business.uconn.edu/wp-content/uploads/sites/725/2018/09/bus171108_carina_zamudio-16.jpg"
               alt="Picture of OPIM Workshop" width="300" height="200">
               </img>
@@ -56,7 +56,10 @@ function Hello() {
             <Grid item xs>
               {/* Paragraph explaining the OPIM Department */}
               <p>
-                The Department of Operations and Information Management (OPIM) at the University of Connecticut is a combination of Operations Management and Management Information Systems. It offers concepts and models of operations research, including problem definition and modeling along with information systems topics including project management concepts, hardware and software technology. The Department of OPIM at the University of Connecticut offers undergraduate majors in Management Information Systems and in Management and Engineering for Manufacturing, a new joint program developed and offered with the School of Engineering.
+                The Department of Operations and Information Management (OPIM) at the University of Connecticut is a combination of Operations Management and Management Information Systems. It offers concepts and models of operations research, including problem definition and modeling along with information systems topics including project management concepts, hardware and software technology. 
+              </p>
+              <p>
+              The Department of OPIM at the University of Connecticut offers undergraduate majors in Management Information Systems and in Management and Engineering for Manufacturing, a new joint program developed and offered with the School of Engineering.
               </p>
             </Grid>
           </Grid>
@@ -64,7 +67,7 @@ function Hello() {
           <Grid md container direction='column' alignItems='center' spacing={2}> 
             <Grid item xs>
               {/* Picture of MIS class */}
-              <img 
+              <img style={{borderRadius: 20}}
               src="https://opim.business.uconn.edu/wp-content/uploads/sites/725/2013/07/feature_sulin.jpg"
               alt="Picture of MIS Class" width="300" height="200">
               </img>

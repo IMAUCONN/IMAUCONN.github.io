@@ -121,7 +121,7 @@ export default function TextMobileStepper() {
   return (
     <Layout title="About Us">
       <Container maxWidth='xl'>
-      <Grid container direction='column'>
+      <Grid container direction='column' style={{ paddingLeft: 12 }}>
           <Grid item >
             <h1 style={{marginTop:10}}> About us</h1>
           </Grid>
@@ -156,7 +156,7 @@ export default function TextMobileStepper() {
                 {eboard.map((step, index) => (
                   <div className={classes.root}>
                   {Math.abs(activeStep - index) <= 2 ? (
-                    <Grid container direction='row' justify='space-evenly'>
+                    <Grid container direction='row' justify='space-evenly' >
                      <Grid item sm={3}>
                       <h2>About me</h2>
                       <p> {step.paragraph} </p>
