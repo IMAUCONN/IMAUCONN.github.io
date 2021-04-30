@@ -10,7 +10,7 @@ This is the HTML tag that is used to create paragraphs.
 [Read More](https://www.w3schools.com/tags/tag_p.asp)
 
 `<text>`
-This is the HTML tag that is used to create blcoks of text.
+This is the HTML tag that is used to create blocks of text.
 
 `<h1>,<h2>,<h3>,...`
 
