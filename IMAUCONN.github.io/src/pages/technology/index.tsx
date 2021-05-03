@@ -14,7 +14,7 @@ function Hello() {
         Additional Resources That Are Very Valuable to IMA Members:
         </h1>
         <Grid xl container direction='row' style={{ gap: 32 }}>
-          <Grid md container direction='column' alignItems='center' spacing={2}> 
+          <Grid md container direction='column' alignItems='center' justify='flex-start' spacing={2}> 
             <Grid item xs>
               {/* Picture of VIBE */}
               <img style={{borderRadius: 20}}
@@ -39,7 +39,7 @@ function Hello() {
             </Grid>
           </Grid>
           
-          <Grid md container direction='column' alignItems='center' spacing={2}> 
+          <Grid md container direction='column' alignItems='center' justify='flex-start' spacing={2}> 
             <Grid item xs>
               {/* Picture of OPIM Department */}
               <img style={{borderRadius: 20}}
@@ -64,7 +64,7 @@ function Hello() {
             </Grid>
           </Grid>
           
-          <Grid md container direction='column' alignItems='center' spacing={2}> 
+          <Grid md container direction='column' alignItems='center' justify='flex-start' spacing={2}> 
             <Grid item xs>
               {/* Picture of MIS class */}
               <img style={{borderRadius: 20}}

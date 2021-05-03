@@ -10,24 +10,30 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'The Glabstein Lab',
-    imageUrl: 'img/lab.jpg'
+    imageUrl: 'img/lab.jpg',
+    webURL: 'https://innovatelabs.uconn.edu/research-lab/'
   },
   {
     title: 'Executive Board',
-    imageUrl: 'img/headshots/eboard.jpg'
+    imageUrl: 'img/headshots/eboard.jpg',
+    webURL:'/about_us/'
   },
 ];
  {/* This is the Feature function that styles the images and puts them in divs */}
-function Feature({imageUrl, title}) {
+function Feature({imageUrl, title, webURL}) {
   const imgUrl = useBaseUrl(imageUrl);
+
   return (
+    
     <div className={clsx('col col--4', styles.feature)}>
+      <Link to={webURL}>
       {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
+          <div className="text--center">
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </div>
       )}
       <h3>{title}</h3>
+      </Link>
     </div>
   );
 }

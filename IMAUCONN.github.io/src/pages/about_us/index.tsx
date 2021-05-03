@@ -84,18 +84,17 @@ const useStyles =
       height: 500,
     },
     img: {
-      height: 300,
+      flex:1, 
       display: 'block',
-      maxWidth: 300,
       overflow: 'hidden',
-      width: '100%',
-      borderRadius: 5
+      borderRadius: 5,
+
     },
     bigimg: {
-      MaxHeight: 600,
+      flex: 1,
+      maxHeight: 500,
       maxWidth: 600,
-      paddingLeft: 15,
-      borderRadius: 45
+      borderRadius: 20
     },
   }),
 );
@@ -120,33 +119,33 @@ export default function TextMobileStepper() {
 
   return (
     <Layout title="About Us">
-      <Container maxWidth='xl'>
-      <Grid container direction='column' style={{ paddingLeft: 12 }}>
-          <Grid item >
-            <h1 style={{marginTop:10}}> About us</h1>
+      <Container maxWidth='xl' >
+      <Grid container direction='column'>
+          <Grid item>
+            <h1 style={{marginTop:10}}>About us</h1>
           </Grid>
-          <Grid item >
-            <h2>Who we are:</h2> 
-          </Grid>
-          <Grid container direction='row' style={{paddingBottom: 15}}>  
-            <Grid item xs justify='flex-start'>
-              <Grid>   
+          <Grid container direction='row' spacing={4} alignItems='center' style={{paddingBottom: 15, flex:1}}>  
+            <Grid item sm justify='flex-start'>
                 {/* This is where you can change introductory text of the about us page. */}
+                  <h2>Who we are:</h2> 
                   <p>The Information Management Association (IMA) is a student-run organization, at the University of Connecticut, that provides resources for students interested in the field of Information Technology. We allow students to develop their professional skill-set by connecting them to relevant job opportunities, all while creating an inviting community.</p>
                   <p>Our meetings and events involve inviting IT representatives from various industries to connect with students and teach them about the industry, their specific companies, and potential job opportunities. We also focus on professional development by offering networking opportunities, resume building workshops, and mock interviews.</p>
                   <p>Together we create a network of individuals passionate about information systems, analytics, and industry technology. </p> 
-              </Grid>
             </Grid>
-            <Grid item xs justify='flex-end'>
+            <Grid item sm justify='flex-end'>
             {/* This is the picture */}
-            <img className={classes.bigimg} src="https://www.business.uconn.edu/wp-content/uploads/sites/969/2015/09/2015-09-30_bschool.jpg"></img>  
+            <img 
+              className={classes.bigimg} 
+              src="https://marketing.business.uconn.edu/wp-content/uploads/sites/724/2013/07/feature_school1.jpg">
+            </img>  
             </Grid>
           </Grid >
-          <Grid container justify="center" style={{backgroundColor: 'lightgrey', borderRadius: 10}}>
+
+          <Grid container justify="center" style={{backgroundColor: 'lightgrey', borderRadius: 10, flex:1}}>
             <Grid item>
               <h1 style={{marginBottom: 20, marginTop: 20}}>Meet the Executive Board</h1> 
             </Grid>
-            <Grid item>
+            <Grid item >
                {/* This is the widget*/}
               <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -156,7 +155,7 @@ export default function TextMobileStepper() {
                 {eboard.map((step, index) => (
                   <div className={classes.root}>
                   {Math.abs(activeStep - index) <= 2 ? (
-                    <Grid container direction='row' justify='space-evenly' >
+                    <Grid container direction='row' justify='space-evenly'  >
                      <Grid item sm={3}>
                       <h2>About me</h2>
                       <p> {step.paragraph} </p>
