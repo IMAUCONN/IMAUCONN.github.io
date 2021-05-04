@@ -1,18 +1,28 @@
 module.exports = {
+  //title for the homepage and browser
   title: 'UConn IMA',
+  //tagline for the homepage
   tagline: 'The Information Management Association (IMA) at the University of Connecticut is a student-run organization that provides resources for students interested in the field of Information Technology. Our meetings and events involve inviting IT representatives from various industries to speak to students about their company, job prospects in the field, recruitment, informational sessions, resume building, conduct mock interviews, and the art of networking.',
+  //URL of the site DO NOT TOUCH
   url: 'https://IMAUCONN.github.io',
+  //root directory of the site
   baseUrl: '/',
+  //If a link is broken throws error or warning
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  
+  //Icon for the browser header
   favicon: 'img/home-page/ima_logo_white.png',
+  //These link to the Github Repo
   organizationName: 'IMAUCONN', // Usually your GitHub org/user name.
   projectName: 'IMAUCONN.github.io', // Usually your repo name.
+  //changes the theme and color of the website 
   themeConfig: {
     colorMode: {
       disableSwitch: true,
       defaultMode: 'light'
     },
+    //Header of every page in the site
     navbar: {
       title: 'UConn IMA',
       style: 'dark',
@@ -20,6 +30,7 @@ module.exports = {
         alt: 'My Site Logo',
         src: 'img/home-page/ima_logo.png',
       },
+      //list of items on the nav bar
       items: [
         {
           to: '/about_us/',
@@ -48,6 +59,7 @@ module.exports = {
         },
       ],
     },
+    //footer component for each page
     footer: {
       style: 'dark',
       links: [
