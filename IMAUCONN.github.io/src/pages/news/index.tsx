@@ -108,11 +108,11 @@ export default function App() {
     const feed = new window.DOMParser().parseFromString(contents, "text/xml");
     let items: any = feed.querySelectorAll("item");
     
-    const feedItems = [...items].map((el) => ({
-      link: el.querySelector("link").innerHTML,
-      description: el.querySelector("description").innerHTML,
-      title: el.querySelector("title").innerHTML,
-      pubDate: el.querySelector("pubDate").innerHTML,
+    const feedItems = [...items].map((item) => ({
+      link: item.querySelector("link").innerHTML,
+      description: item.querySelector("description").innerHTML,
+      title: item.querySelector("title").innerHTML,
+      pubDate: item.querySelector("pubDate").innerHTML,
     }));
 
     setItems(feedItems);
