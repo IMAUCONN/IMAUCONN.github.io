@@ -19,5 +19,12 @@
 -  ```git checkout -b branch_name``` switches your branch to a new one that can be named
 -  ```git checkout branch_name``` switches to a branch that already exists
 - ```git clone reponame``` clones a Github repository to your computer
+
 ## Deploying and running the Website
 -  [Documentation](https://github.com/IMAUCONN/IMAUCONN.github.io/tree/main/IMAUCONN.github.io)
+
+## Redirects
+- This new site is utilized in place of the old site (https://ima-business.rso.uconn.edu).
+- All links to this URL will now link to respective pages on the new site.
+- In the case that you need to change any of these redirects, you can sign in to the old site [Here](https://ima-business.rso.uconn.edu/wp-admin/).
+- To access this, you will need WebMaster credentials in HuskyCT. You can change the redirect rules by navigating to the left hand sidebar > Tools > Safe Redirect Manager. Here you can make changes accordingly.
