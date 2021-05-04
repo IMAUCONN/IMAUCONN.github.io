@@ -15,7 +15,7 @@ const features = [
   },
   {
     title: 'Executive Board',
-    imageUrl: 'img/headshots/eboard.jpg',
+    imageUrl: '/img/home-page/eboard.jpg',
     webURL:'/about_us/'
   },
 ];

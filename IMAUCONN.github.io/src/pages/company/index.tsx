@@ -5,7 +5,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function Hello() {
 
-  const prefix = '../../static/img/company_logos';
+  const prefix = '../../static/img/company';
    {/* Logos of Companies*/}
   const logos = [
     'Accenture', 
@@ -17,7 +17,7 @@ function Hello() {
     'Synchrony',
     'The_Hartford',
     'Travelers',
-    'UTC',
+    'Raytheon',
   ].map(x => `${prefix}/${x}.png`);
 
   return (
