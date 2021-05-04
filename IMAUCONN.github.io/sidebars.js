@@ -1,5 +1,6 @@
 module.exports = {
   someSidebar: {
+    //minutes list for each markdown file for the meating minutes
     Minutes: [
       'January 26, 2021', 
       'February 2, 2021', 
