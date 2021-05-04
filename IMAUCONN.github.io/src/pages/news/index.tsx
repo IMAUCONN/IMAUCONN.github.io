@@ -4,7 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import NewReleasesOutlinedIcon from '@material-ui/icons/NewReleasesOutlined';
+import ListIcon from '@material-ui/icons/List';
 import { Container } from "@material-ui/core";
 
 //this is a lookup table to get rid of HTLM escape characters https://www.werockyourweb.com/html-escape-characters/
@@ -127,10 +127,10 @@ export default function App() {
         <List>
         <ListItem>
           <ListItemIcon >
-            <NewReleasesOutlinedIcon style={{ fontSize: 60, paddingRight: 10 }} />
+            <ListIcon style={{ fontSize: 60, paddingRight: 15 }} />
           </ListItemIcon>
           <ListItemText 
-            primary={<a href= {strip(item.link)}>{strip(item.title)}</a>}
+            primary={<h2><a href= {strip(item.link)}>{strip(item.title)}</a></h2>}
             secondary={strip(item.description)}
           />
         </ListItem>
