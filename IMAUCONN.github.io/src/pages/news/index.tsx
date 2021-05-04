@@ -106,15 +106,16 @@ export default function App() {
     const res = await fetch(`https://api.allorigins.win/get?url=http://www.business.uconn.edu/category/opim-innovate/feed`);
     const { contents } = await res.json();
     const feed = new window.DOMParser().parseFromString(contents, "text/xml");
-    let items: any = feed.querySelectorAll("item");
-    console.log(contents);
-    const feedItems = [...items].map((item) => ({
-      link: item.querySelector("link").innerHTML,
-      description: item.querySelector("description").innerHTML,
-      title: item.querySelector("title").innerHTML,
-      pubDate: item.querySelector("pubDate").innerHTML,
-    }));
-
+    let items = feed.querySelectorAll("item");
+    const feedItems = [];
+    items.forEach((item) => {
+      feedItems.push({
+        link: item.querySelector("link").innerHTML,
+        description: item.querySelector("description").innerHTML,
+        title: item.querySelector("title").innerHTML,
+        pubDate: item.querySelector("pubDate").innerHTML,
+      });
+    });
     setItems(feedItems);
   };
 
