@@ -107,7 +107,7 @@ export default function App() {
     const { contents } = await res.json();
     const feed = new window.DOMParser().parseFromString(contents, "text/xml");
     let items: any = feed.querySelectorAll("item");
-    
+    console.log(contents);
     const feedItems = [...items].map((item) => ({
       link: item.querySelector("link").innerHTML,
       description: item.querySelector("description").innerHTML,
