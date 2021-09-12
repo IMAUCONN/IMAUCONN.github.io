@@ -26,7 +26,7 @@ const rows = [
   createData('Synchrony', "September 15, 2021", "N/A", "WebEx", "7:45PM EST"),
   createData('The Hartford', "September 22, 2021", "N/A", "WebEx", "7:45PM EST"),
   createData('Travelers', "September 29, 2021", "N/A", "WebEx", "7:45PM EST"),
-  createData('EY', "October 6, 2021", "N/A", "WebEx", "7:00PM EST"),
+  createData('EY', "October 6, 2021", "N/A", "WebEx", "7:45PM EST"),
   createData('The Hartford', "April 16, 2021", "N/A", "WebEx", "7:45PM EST"),
 ];
 
