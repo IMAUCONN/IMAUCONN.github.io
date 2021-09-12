@@ -43,7 +43,7 @@ function Hello() {
               This can be done in a variety of ways, for example, hosting a <strong> recruitment-focused informational session, a technical workshop, a professional development presentation</strong>, etc. Not only will this allow you to meet potential job candidates prior to the interviewing process, but you also can increase awareness of your company and contribute to the professional growth of our members!
             </p>
             <p>
-              Our meetings are on <strong>Tuesday</strong> nights from <strong>7:00PM - 8:00PM EST</strong>. So, if you fit this description and are interested in connecting with IMA, please fill out the form below. It will allow us to get an understanding of what you would like to present, your availability, and any questions or concerns you may have.
+              Our meetings are on <strong>Wednesday</strong> nights from <strong>7:45PM - 8:30PM EST</strong>. So, if you fit this description and are interested in connecting with IMA, please fill out the form below. It will allow us to get an understanding of what you would like to present, your availability, and any questions or concerns you may have.
             </p>
             <p>
               We look forward to connecting with you! If you are interested in learning more about our club, please feel free to explore our website and take a look at all of the different initiatives we are involved in. 
