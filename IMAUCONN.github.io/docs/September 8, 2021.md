@@ -85,8 +85,7 @@ Members and Eboard
 
 ## ACTION ITEMS
 
-- Contact Information:
-    - kevin.r.brown@uconn.edu 
+- Contact Information
 
 ## NEXT WEEK’S AGENDA
 
