@@ -27,7 +27,7 @@ const rows = [
   createData('The Hartford', "September 22, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
   createData('Travelers', "September 29, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
   createData('EY', "October 6, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
-  createData('The Hartford', "April 16, 2021", "School of Business", "215", "7:45PM EST"),
+  createData('The Hartford', "October 13, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
 ];
 
 export default function App() {
