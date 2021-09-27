@@ -47,7 +47,7 @@ export default function App() {
             {/* Paragraph for Meetings */}
             <p>
               IMA meetings give students the opportunity to network with employers and also participate in technical workshops to improve various skillsets.  
-              <strong> Tuesday</strong> meetings are typically reserved for company recruitment and networking. <strong>Wednesday</strong> meetings are typically reserved for technical workshops and hands-on experience in the Gladstein Lab. 
+              <strong> Wednesday Evening</strong> meetings are typically reserved for company recruitment and networking. <strong>Wednesday Morning</strong> meetings are typically reserved for technical workshops and hands-on experience in the Gladstein Lab. 
             </p>
             <p>
               If you are looking to sign into a meeting or are interested in reviewing our meeting minutes, please click the respective buttons below. 
