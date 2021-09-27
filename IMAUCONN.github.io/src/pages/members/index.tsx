@@ -23,11 +23,11 @@ function createData(name: string, date: string, location: string, room: string, 
 
 const rows = [
   //create data using name date location room and time in items'
-  createData('Synchrony', "September 15, 2021", "N/A", "WebEx", "7:45PM EST"),
-  createData('The Hartford', "September 22, 2021", "N/A", "WebEx", "7:45PM EST"),
-  createData('Travelers', "September 29, 2021", "N/A", "WebEx", "7:45PM EST"),
-  createData('EY', "October 6, 2021", "N/A", "WebEx", "7:45PM EST"),
-  createData('The Hartford', "April 16, 2021", "N/A", "WebEx", "7:45PM EST"),
+  createData('Synchrony', "September 15, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
+  createData('The Hartford', "September 22, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
+  createData('Travelers', "September 29, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
+  createData('EY', "October 6, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
+  createData('The Hartford', "April 16, 2021", "School of Business", "215", "7:45PM EST"),
 ];
 
 export default function App() {
