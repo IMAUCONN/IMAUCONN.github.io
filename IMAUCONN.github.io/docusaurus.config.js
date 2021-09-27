@@ -20,6 +20,7 @@ module.exports = {
   themeConfig: {
     colorMode: {
       disableSwitch: true,
+      respectUserPreference: false,
       defaultMode: 'light'
     },
     //Header of every page in the site
