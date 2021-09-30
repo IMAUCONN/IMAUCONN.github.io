@@ -4,7 +4,7 @@ title: September 8, 2021
 sidebar_label: September 8, 2021
 ---
 
-16 March 2021 / 7:00 PM / Webex
+8 September 2021 / 7:45 PM / Webex
 
 ## ATTENDEES
 
