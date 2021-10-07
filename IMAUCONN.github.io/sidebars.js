@@ -13,7 +13,8 @@ module.exports = {
       'March 23, 2021', 
       'April 6, 2021',
       'September 8, 2021',
-      'September 29, 2021'
+      'September 29, 2021',
+      'October 6, 2021'
     ]
   },
 };
