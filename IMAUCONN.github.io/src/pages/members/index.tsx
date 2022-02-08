@@ -23,11 +23,8 @@ function createData(name: string, date: string, location: string, room: string, 
 
 const rows = [
   //create data using name date location room and time in items'
-  createData('Synchrony', "September 15, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
+  createData('PwC', "February 2, 2022", "School of Business", "Virtual", "7:45PM EST"),
   createData('The Hartford', "September 22, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
-  createData('Travelers', "September 29, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
-  createData('EY', "October 6, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
-  createData('Yale IT', "October 13, 2021", "School of Business", "BUSN 215", "7:45PM EST"),
 ];
 
 export default function App() {
